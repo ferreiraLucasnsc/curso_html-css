@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento de Tabelas</title>
+    <style>
+        table {
+            width: 500px;
+            height: 500px;
+            border-collapse: collapse;
+            border: 3px solid black;
+        }
+        td {
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+        tr.hrz td:nth-child(1) {
+            text-align: left;
+        }
+        tr.hrz td:nth-child(2) {
+            text-align: center;
+        }
+        tr.hrz td:nth-child(3) {
+            text-align: right;
+        }
+
+        tr.vrt td:nth-child(1) {
+            vertical-align: top;
+        }
+        tr.vrt td:nth-child(2) {
+            vertical-align: middle;
+        }
+        tr.vrt td:nth-child(3) {
+            vertical-align: bottom;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr class="hrz"> <!-- Alinhamento horizontal -->
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr class="vrt"> <!-- Alinhamento vertical -->
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr class="vrt hrz"> <!-- Ambos alinhamentos -->
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+</body>
+</html>
