@@ -10,21 +10,32 @@
             border-collapse: collapse;
             border: 5px solid black;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
+            position: relative;
         }
         table th, table td {
             border: 1px solid black;
         }
         table thead {
-            background-color: lightgray;
+            background-color: grey;
+            color: white;
         }
         table thead th {
+            background-color: grey;
+            border-collapse: collapse;
+            border: 1px solid black;
             padding: 10px;
+            position: sticky;
+            top: -5px;
+        }
+        table tbody tr:nth-child(odd) {
+            background-color: lightgray;
         }
         table td {
             padding: 5px;
         }
         table tfoot {
-            background-color: lightgray;
+            background-color: grey;
+            color: white;
         }
         table tfoot th {
             padding: 10px;
