@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegação de iframe</title>
+    <style>
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de navegação em iframe</h1>
+    <p>Use a lista abaixo para navegar entre as páginas dentro do iframe:</p>
+    <ul>
+        <li><a href="páginas do iframe/pag01.html" target="iframe">Primeira página</a></li>
+        <li><a href="páginas do iframe/pag02.html" target="iframe">Segunda página</a></li>
+        <li><a href="páginas do iframe/pag03.html" target="iframe">Terceira página</a></li>
+    </ul>
+
+    <iframe src="" frameborder="1" name="iframe"
+    srcdoc="
+        <body style='background-color: lightgray; text-align: center;'>
+            <h2>Escolha uma das opções acima</h2>
+            <p>As páginas serão carregadas aqui dentro</p>
+        </body>
+    "></iframe>
+</body>
+</html>
