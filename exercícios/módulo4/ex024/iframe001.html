@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudo sobre iframes</title>
+    <style>
+        .iframe {
+            border: 2px solid red;
+        }
+    </style>
 </head>
 <body>
     <h1>Testando o uso de um iframe</h1>
     <p>
         Utilizando o site do
         
-        <iframe src="https://www.cursoemvideo.com/" frameborder="0"></iframe>
+        <iframe src="https://www.cursoemvideo.com/" frameborder="0" width="400" height="120" scrolling="no"></iframe>
 
         para demonstrar iframes.
     </p>
@@ -18,7 +23,7 @@
     <p>
         Alguns sites não podem ser acessados, como o site da 
 
-        <iframe src="https://www.google.com/" frameborder="0"></iframe>
+        <iframe src="https://www.google.com/" frameborder="1" class="iframe"></iframe>
     </p>
 </body>
 </html>
